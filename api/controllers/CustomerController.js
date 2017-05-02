@@ -7,6 +7,8 @@
 
 module.exports = {
 
+    layout: 'layouts/master',
+
     'new': function(req, res) {
         res.view();
     },
