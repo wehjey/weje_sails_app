@@ -5,19 +5,25 @@
  * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
  */
 
+var bcrypt = require("bcrypt");
+
 module.exports = {
 
     attributes: {
 
         name: {
-            type: 'string',
-            required: true
+            type: 'string'
         },
         email: {
             type: 'string',
             email: true,
             required: true
-        }
+        },
+        password: {
+            type: 'string',
+            required: true
+        },
+        
 
-    }
+    },
 };
